@@ -1,0 +1,16 @@
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:vintageinvitaciones.com
+Header always set Content-Security-Policy: upgrade-insecure-requests
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW UPGRADE_INSECURE_REQUESTS:vintageinvitaciones.com
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW HOTLINKID:EWs7CzgzYA
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?vintageinvitaciones.com/.*$      [NC]
+RewriteRule .*\.(jpg|jpeg|png|gif)$ https://vintageinvitaciones.com [R,NC]
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE EWs7CzgzYA:HOTLINKID
+
+
+
