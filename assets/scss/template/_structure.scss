@@ -1,0 +1,119 @@
+/* STRUCTURE */
+
+* {
+    color: $default-color;
+    margin: 0;
+    padding: 0;
+}
+
+/* TOP NAV BAR */
+nav {
+    min-height: 80px;
+    height: 111px;
+
+    .container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        margin: 0;
+        margin-top: 15px;
+
+        li {
+            padding: 0 10px;
+
+            a {
+                position: relative;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $default-color;
+
+                &:hover {
+                    color: $pink-text-color;
+                    transform: translateY(10px);
+                }
+            }
+        }
+    }
+}
+
+/* HEADER */
+.header {
+    position: relative;
+    height: 500px;
+
+    h2 {
+        position: relative;
+        margin-top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .header-decoration {
+        position: absolute;
+        background-color: $default-color;
+        background-image: url('/assets/images/header.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top left;
+        width: 50%;
+        height: 100%;
+        display: block;
+        right: 0;
+        top: 0;
+        border-radius: 40px 0 0 40px;
+    }
+}
+
+.inner-header {
+    display: block;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    margin: 60px 0;
+
+    &.history-section {
+        position: relative;
+
+        .text-content {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &.testimonies-section {
+        position: relative;
+
+        .text-content {
+            position: relative;
+            text-align: right;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+/* FOOTER */
+footer {
+    margin-bottom: 40px;
+
+    .container {
+        border-top: 2px solid $pink-background-color;
+        padding-top: 40px;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
